@@ -79,7 +79,7 @@ const Hero = () => {
           <a
             className="btn btn-secondary mx-10"
             href="./../assets/SohrabYavari.pdf"
-            download="Sohrab Yavari"
+            download="SohrabYavari.pdf"
           >
             <img src={DownloadBtn} className="w-3" />
             Resume
