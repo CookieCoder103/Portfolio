@@ -1,7 +1,4 @@
-import Card from "../components/Card/Card";
-import Marc from "./../assets/Marc.jpg";
-import John from "./../assets/Johns-Photography.jpg";
-import Solar from "./../assets/Reasons.jpg";
+
 import Timeline from "../components/Timeline/Timeline";
 
 const Projects = () => {
