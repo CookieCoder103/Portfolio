@@ -2,6 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+* {
+  font-family: "Itim", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body {
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
