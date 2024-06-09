@@ -6,7 +6,7 @@ const Navbar = () => {
       <ul className="menu p-1 bg-base-200 bg-opacity-50 rounded-box">
         <li>
           <a className="tooltip tooltip-right" data-tip="Home">
-            <Link to="/Sohrab-Yavari/">
+            <Link to="/Portfolio/">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
@@ -27,7 +27,7 @@ const Navbar = () => {
 
         <li>
           <a className="tooltip tooltip-right" data-tip="Resume">
-            <Link to="/Sohrab-Yavari/Resume">
+            <Link to="/Portfolio/Resume">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 className="h-5 w-5"
