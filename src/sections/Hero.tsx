@@ -30,7 +30,7 @@ const Hero = () => {
   return (
     <div id="Hero" className="hero min-h-screen mx-auto ">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <figure className="lg:mb-80 mb-40">
+        <figure className="">
           <motion.img
             variants={scaleAndFadeAnimVarient}
             initial="initial"
@@ -63,12 +63,12 @@ const Hero = () => {
               viewport={{
                 once: true,
               }}
-              className="text-4xl text-center font-bold pl-10"
+              className="text-6xl text-center font-bold"
             >
               Sohrab Yavari
             </motion.h1>
           </div>
-          <p className="px-10 py-6 md:pr-16 text-justify">
+          <p className="py-6 md:pr-16 text-justify">
             Hi, I'm Sohrab Yavari but I go by Sam. I have a background in
             Mechanical Engineering but Software Engineering is where my
             interests lie, I have a strong focus on frontend development; as you
@@ -76,7 +76,7 @@ const Hero = () => {
             and minimalistic style. I am also continuously learning more about
             backend development through C# and the .Net framework.
           </p>
-          <Link className="btn btn-secondary ml-10" to="/Portfolio/Resume">Resume</Link>
+          <Link className="btn btn-secondary " to="/Portfolio/Resume">Resume</Link>
         </div>
       </div>
     </div>

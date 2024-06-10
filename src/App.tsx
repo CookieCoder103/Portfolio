@@ -15,12 +15,12 @@ function App() {
         <ThemeController />
       </div>
       <Navbar />
+      <div className="container mx-auto">
       <Routes>
         <Route path="/Portfolio/" element={<Home />}></Route>
         <Route path="/Portfolio/Resume" element={<Resume />}></Route>
       </Routes>
-      <div className="container mx-auto">
-        <Outlet />
+      
       </div>
       <Footer />
     </>
