@@ -1,6 +1,7 @@
 import HeroImg from "./../assets/Me.jpg";
 import { motion } from "framer-motion";
 import DownloadBtn from "./../assets/download-button-svgrepo-com.svg";
+import { Link } from "react-router-dom";
 
 const fadeInAnimVariant = {
   initial: {
@@ -30,7 +31,7 @@ const Hero = () => {
   return (
     <div id="Hero" className="hero min-h-screen mx-auto ">
       <div className="hero-content flex-col lg:flex-row-reverse">
-        <figure className="md:mb-80">
+        <figure className="lg:mb-80 mb-40">
           <motion.img
             variants={scaleAndFadeAnimVarient}
             initial="initial"
@@ -76,14 +77,7 @@ const Hero = () => {
             and minimalistic style. I am also continuously learning more about
             backend development through C# and the .Net framework.
           </p>
-          <a
-            className="btn btn-secondary mx-10"
-            href="./../assets/SohrabYavari.pdf"
-            download="SohrabYavari.pdf"
-          >
-            <img src={DownloadBtn} className="w-3" />
-            Resume
-          </a>
+          <Link className="btn btn-secondary ml-10" to="/Portfolio/Resume">Resume</Link>
         </div>
       </div>
     </div>
