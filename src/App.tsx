@@ -1,4 +1,3 @@
-import { Outlet } from "react-router";
 import { Route, Routes } from "react-router-dom";
 
 // Comps
@@ -16,11 +15,10 @@ function App() {
       </div>
       <Navbar />
       <div className="container mx-auto">
-      <Routes>
-        <Route path="/Portfolio/" element={<Home />}></Route>
-        <Route path="/Portfolio/Resume" element={<Resume />}></Route>
-      </Routes>
-      
+        <Routes>
+          <Route path="/Portfolio/" element={<Home />}></Route>
+          <Route path="/Portfolio/Resume" element={<Resume />}></Route>
+        </Routes>
       </div>
       <Footer />
     </>
