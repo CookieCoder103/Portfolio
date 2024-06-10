@@ -1,6 +1,5 @@
 import HeroImg from "./../assets/Me.jpg";
 import { motion } from "framer-motion";
-import DownloadBtn from "./../assets/download-button-svgrepo-com.svg";
 import { Link } from "react-router-dom";
 
 const fadeInAnimVariant = {
