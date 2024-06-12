@@ -5,7 +5,7 @@ import Projects from "../sections/Projects";
 const Home = () => {
   return (
     <>
-    <div>
+    <div className="px-5">
       <Hero />
       <div className="divider p-2" />
       <About />

@@ -25,17 +25,19 @@ const Timeline = () => {
           <div className="timeline-start md:text-end mb-10">
             <time className="font-mono italic">1</time>
             <div className="text-lg font-black">Marcus Aurelius</div>
-            <a
-              href="https://github.com/CookieCoder103/Meditations_Quotes"
-              target="_blank"
-            >
-              <Card
-                description="This Chrome extension provides inspiring quotes from Marcus
-              Aurelius for tough days. It's crafted with basic HTML, CSS,
-              and JavaScript."
-                img={Marc}
-              />{" "}
-            </a>
+            <div className="hover:scale-105 duration-300 ease-in-out">
+              <a
+                href="https://github.com/CookieCoder103/Meditations_Quotes"
+                target="_blank"
+              >
+                <Card
+                  description="This Chrome extension provides inspiring quotes from Marcus
+                Aurelius for tough days. It's crafted with basic HTML, CSS,
+                and JavaScript."
+                  img={Marc}
+                />{" "}
+              </a>
+            </div>
           </div>
           <hr />
         </li>
@@ -58,6 +60,7 @@ const Timeline = () => {
           <div className="timeline-end mb-10">
             <time className="font-mono italic">2</time>
             <div className="text-lg font-black">Johns Photography</div>
+            <div className="hover:scale-105 duration-300 ease-in-out">
             <a
               href="https://cookiecoder103.github.io/Johns-Photography/"
               target="_blank"
@@ -70,6 +73,7 @@ const Timeline = () => {
                 img={John}
               />
             </a>
+            </div>
           </div>
           <hr />
         </li>
@@ -92,6 +96,7 @@ const Timeline = () => {
           <div className="timeline-start md:text-end mb-10">
             <time className="font-mono italic">3</time>
             <div className="text-lg font-black">Refreshed Solar</div>
+            <div className="hover:scale-105 duration-300 ease-in-out">
             <a
               href="https://cookiecoder103.github.io/Refreshed-Solar/"
               target="_blank"
@@ -101,6 +106,7 @@ const Timeline = () => {
                 img={Solar}
               />
             </a>
+            </div>
           </div>
           <hr />
         </li>

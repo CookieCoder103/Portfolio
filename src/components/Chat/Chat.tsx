@@ -52,7 +52,7 @@ const Chat = ({ chatleft, chatRight }: Props) => {
           viewport={{
             once: true,
           }}
-          className="chat chat-start"
+          className="chat chat-start py-2"
         >
           <div className="chat-bubble">{chatleft}</div>
         </motion.div>
@@ -70,7 +70,7 @@ const Chat = ({ chatleft, chatRight }: Props) => {
           viewport={{
             once: true,
           }}
-          className="chat chat-end"
+          className="chat chat-end py-2"
         >
           <div className="chat-bubble bg-secondary">
             {chatRight}

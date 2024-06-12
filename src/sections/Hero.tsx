@@ -1,83 +1,84 @@
-import HeroImg from "./../assets/Me.jpg";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const fadeInAnimVariant = {
   initial: {
     opacity: 0,
-    y: 50,
+    x: 50,
   },
   animate: {
     opacity: 1,
-    y: 0,
+    x: 0,
   },
 };
 
-const scaleAndFadeAnimVarient = {
+const fadeInAnimVariant2 = {
   initial: {
-    scale: 0,
-    y: 200,
     opacity: 0,
+    x: -50,
   },
   animate: {
-    scale: 1,
-    y: 0,
     opacity: 1,
+    x: 0,
   },
 };
 
 const Hero = () => {
   return (
-    <div id="Hero" className="hero min-h-screen mx-auto ">
-      <div className="hero-content flex-col lg:flex-row-reverse">
-        <figure className="">
-          <motion.img
-            variants={scaleAndFadeAnimVarient}
+    <div className="min-h-3/5">
+      <div>
+        <motion.h1
+          variants={fadeInAnimVariant}
+          initial="initial"
+          whileInView="animate"
+          transition={{
+            type: "spring",
+            delay: 0.5,
+            damping: 35,
+            duration: 1.5,
+          }}
+          viewport={{
+            once: true,
+          }}
+          className="md:text-9xl text-7xl font-bold text-right "
+        >
+          Sohrab
+          <motion.h1
+            variants={fadeInAnimVariant}
             initial="initial"
             whileInView="animate"
             transition={{
               type: "spring",
-              delay: 0.5,
+              delay: 0.75,
               damping: 35,
               duration: 1.5,
             }}
             viewport={{
               once: true,
             }}
-            src={HeroImg}
-            className="rounded-full shadow-2xl"
-          />
-        </figure>
-        <div className="">
-          <div className="flex items-center gap-2 ">
-            <motion.h1
-              variants={fadeInAnimVariant}
-              initial="initial"
-              whileInView="animate"
-              transition={{
-                type: "spring",
-                delay: 0.5,
-                damping: 20,
-                duration: 1,
-              }}
-              viewport={{
-                once: true,
-              }}
-              className="text-6xl text-center font-bold"
-            >
-              Sohrab Yavari
-            </motion.h1>
-          </div>
-          <p className="py-6 md:pr-16 text-justify">
-            Hi, I'm Sohrab Yavari but I go by Sam. I have a background in
-            Mechanical Engineering but Software Engineering is where my
-            interests lie, I have a strong focus on frontend development; as you
-            can tell throught my projects and portfolio I favour a more sleek
-            and minimalistic style. I am also continuously learning more about
-            backend development through C# and the .Net framework.
-          </p>
-          <Link className="btn btn-secondary " to="/Portfolio/Resume">Resume</Link>
-        </div>
+          >
+            {" "}
+            Yavari{" "}
+          </motion.h1>
+        </motion.h1>
+        <motion.p 
+        variants={fadeInAnimVariant2}
+        initial="initial"
+        whileInView="animate"
+        transition={{
+          type: "spring",
+          delay: 0.75,
+          damping: 35,
+          duration: 1.5,
+        }}
+        viewport={{
+          once: true,
+        }}
+        className="py-6 md:text-6xl text-2xl"
+        >Frontend Web Developer</motion.p>
+        <Link className="btn btn-secondary text-current" to="/Portfolio/Resume">
+          Resume
+        </Link>
       </div>
     </div>
   );
