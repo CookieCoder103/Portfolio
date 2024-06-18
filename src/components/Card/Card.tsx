@@ -20,7 +20,21 @@ const fadeAnimVarient = {
 
 const Card = ({ title, description, img, tech }: Props) => {
   return (
-    <div className="card w-11/12 h-96 mx-auto shadow-xl image-full">
+    <motion.div
+      variants={fadeAnimVarient}
+      initial="initial"
+      whileInView="animate"
+      transition={{
+        type: "spring",
+        delay: 0.5,
+        damping: 15,
+        duration: 0.5,
+      }}
+      viewport={{
+        once: true,
+      }}
+      className="card w-11/12 h-96 mx-auto shadow-xl image-full"
+    >
       <figure>
         <img
           src={img}
@@ -34,7 +48,7 @@ const Card = ({ title, description, img, tech }: Props) => {
           <button className="btn btn-secondary">{tech}</button>
         </div>
       </div>
-    </div>
+    </motion.div>
 
     // <motion.div
     //   variants={fadeAnimVarient}
