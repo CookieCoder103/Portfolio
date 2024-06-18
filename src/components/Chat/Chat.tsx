@@ -54,7 +54,7 @@ const Chat = ({ chatleft, chatRight }: Props) => {
           }}
           className="chat chat-start py-2"
         >
-          <div className="chat-bubble">{chatleft}</div>
+          <div className="chat-bubble rounded-lg">{chatleft}</div>
         </motion.div>
 
         <motion.div
@@ -72,7 +72,7 @@ const Chat = ({ chatleft, chatRight }: Props) => {
           }}
           className="chat chat-end py-2"
         >
-          <div className="chat-bubble bg-secondary">
+          <div className="chat-bubble bg-secondary rounded-lg">
             {chatRight}
           </div>
         </motion.div>
