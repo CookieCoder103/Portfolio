@@ -8,10 +8,10 @@ const Resume = () => {
         <CardComp
           title="My Experience"
           header="Resume"
-          description="Have a look through my experience and contact me if you have any questions"
+          description="Have a look through my experience and contact me if you have any questions."
         >
           <div>
-            <embed src={MyResume} className="mx-auto py-4 w-11/12 h-screen" />
+            <embed src={MyResume} className="mx-auto w-full h-screen rounded-md" />
           </div>
         </CardComp>
       </div>

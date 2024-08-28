@@ -18,7 +18,7 @@ const About = () => {
       <CardComp
         image={profileImage}
         title="Web Developer"
-        description="Either hate it or love it, no inbetween."
+        description="I am a self taught programmer over the last year, eager to learn more and build more!"
         header="About Me"
       >
         <div className="px-2">

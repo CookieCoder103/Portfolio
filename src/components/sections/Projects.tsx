@@ -8,12 +8,9 @@ import TechBadge from "../global/TechBadge";
 import { FaReact } from "react-icons/fa";
 import { SiTypescript } from "react-icons/si";
 import { IoLogoJavascript } from "react-icons/io";
-import { SiCsharp } from "react-icons/si";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiDaisyui } from "react-icons/si";
 import { SiShadcnui } from "react-icons/si";
-import { AiOutlineDotNet } from "react-icons/ai";
-import { FaPython } from "react-icons/fa";
 import { SiMui } from "react-icons/si";
 
 const Projects = () => {
@@ -46,7 +43,7 @@ const Projects = () => {
             webLink="https://cookiecoder103.github.io/InvestIQ/"
             gitLink="https://github.com/CookieCoder103/InvestIQ"
             title="InvestIQ"
-            description="A Website where you can track the top F500 and NASDAQ companies stock prices."
+            description="This uses axios to utilise REST apis to get real time-stock prices for NASDAQ comapnies."
             techStack={
               <>
                 <TechBadge icon={<FaReact />} name="React" />

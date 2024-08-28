@@ -13,73 +13,44 @@ function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
 
   useEffect(() => {
-    const handleResize = () => {
-      setIsSmallScreen(window.innerWidth < 1000);
-    };
-
+    const handleResize = () => setIsSmallScreen(window.innerWidth < 1000);
     handleResize();
-    window.addEventListener("resize", handleResize);
 
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  const renderSections = () => (
+    <>
+      <section id="about-me">
+        <About />
+      </section>
+      <section id="projects">
+        <Projects />
+      </section>
+      <section id="more-on-me">
+        <More />
+      </section>
+      <section id="resume">
+        <Resume />
+      </section>
+    </>
+  );
 
   return (
     <ThemeProvider defaultTheme="dark" storageKey="vite-ui-theme">
-      {isSmallScreen ? (
-        <>
-          <div className="container mx-auto main-content">
-            <Header />
-            <div className="grid grid-cols-1">
-              <div className="col-span-1">
-                <Nav />
-              </div>
-              <div className="w-full flex flex-col gap-5 mt-20">
-                <section id="about-me">
-                  <About />
-                </section>
-                <section id="projects">
-                  <Projects />
-                </section>
-                <section id="more-on-me">
-                  <More />
-                </section>
-                <section id="resume">
-                  <Resume />
-                </section>
-              </div>
-            </div>
+      <div className={`container mx-auto ${isSmallScreen ? "main-content" : "md:px-20"}`}>
+        <Header />
+        <div className={`grid ${isSmallScreen ? "grid-cols-1" : "grid-cols-4 gap-5"}`}>
+          <div className={`${isSmallScreen ? "col-span-1" : "col-span-1"}`}>
+            <Nav />
           </div>
-          <Footer />
-        </>
-      ) : (
-        <>
-          <div className="container mx-auto md:px-20">
-            <Header />
-            <div className="grid grid-cols-4 gap-5">
-              <div className="col-span-1">
-                <Nav />
-              </div>
-              <div className="col-span-3 flex flex-col gap-5">
-                <section id="about-me">
-                  <About />
-                </section>
-                <section id="projects">
-                  <Projects />
-                </section>
-                <section id="more-on-me">
-                  <More />
-                </section>
-                <section id="resume">
-                  <Resume />
-                </section>
-              </div>
-            </div>
+          <div className={`${isSmallScreen ? "w-full flex flex-col gap-5 mt-20" : "col-span-3 flex flex-col gap-5"}`}>
+            {renderSections()}
           </div>
-          <Footer />
-        </>
-      )}
+        </div>
+      </div>
+      <Footer />
     </ThemeProvider>
   );
 }
