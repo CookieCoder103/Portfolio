@@ -43,7 +43,7 @@ const Projects = () => {
             webLink="https://cookiecoder103.github.io/InvestIQ/"
             gitLink="https://github.com/CookieCoder103/InvestIQ"
             title="InvestIQ"
-            description="This uses axios to utilise REST apis to get real time-stock prices for NASDAQ comapnies."
+            description="This uses axios to utilise REST apis to get real-time stock prices for NASDAQ companies."
             techStack={
               <>
                 <TechBadge icon={<FaReact />} name="React" />
