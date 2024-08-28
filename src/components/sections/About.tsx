@@ -21,25 +21,26 @@ const About = () => {
         description="Either hate it or love it, no inbetween."
         header="About Me"
       >
-          <div className="px-2">
-            <h1>Languages & FrameWorks:</h1>
-          </div>
+        <div className="px-2">
+          <h1>Languages & FrameWorks:</h1>
+        </div>
         <div className="flex flex-row flex-wrap gap-2">
-          <TechBadge icon={<FaReact/>} name="React"/>
-          <TechBadge icon={<SiTypescript/>} name="TypeScript"/>
-          <TechBadge icon={<IoLogoJavascript/>} name="JavaScript"/>
-          <TechBadge icon={<SiCsharp/>} name="C#"/>
-          <TechBadge icon={<RiTailwindCssFill/>} name="TailWindCSS"/>
-          <TechBadge icon={<AiOutlineDotNet/>} name="ASP.Net-Core-8.0"/>
-          <TechBadge icon={<FaPython/>} name="Python"/>
+          <TechBadge icon={<FaReact />} name="React" />
+          <TechBadge icon={<SiTypescript />} name="TypeScript" />
+          <TechBadge icon={<IoLogoJavascript />} name="JavaScript" />
+          <TechBadge icon={<SiCsharp />} name="C#" />
+          <TechBadge icon={<RiTailwindCssFill />} name="TailWindCSS" />
+          <TechBadge icon={<AiOutlineDotNet />} name="ASP.Net-Core-8.0" />
+          <TechBadge icon={<FaPython />} name="Python" />
         </div>
         <div className="px-2 pt-8">
-            <h1>UI Libraries:</h1>
-          </div>
+          <h1>UI Libraries:</h1>
+        </div>
         <div className="flex flex-row flex-wrap gap-2">
-          <TechBadge icon={<SiDaisyui/>} name="DaisyUI"/>
-          <TechBadge icon={<SiShadcnui/>} name="ShadcnUI"/>
-          <TechBadge icon={<SiMui/>} name="MaterialUI"/>
+          
+          <TechBadge icon={<SiDaisyui />} name="DaisyUI" />
+          <TechBadge icon={<SiShadcnui />} name="ShadcnUI" />
+          <TechBadge icon={<SiMui />} name="MaterialUI" />
         </div>
       </CardComp>
     </>

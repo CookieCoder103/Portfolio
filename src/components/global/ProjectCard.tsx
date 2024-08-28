@@ -6,7 +6,9 @@ import {
   CardHeader,
   CardTitle,
 } from "../ui/card";
+
 import TechBadge from "./TechBadge";
+import ProjectTechList from "./ProjectTechList";
 
 import { FaGithub } from "react-icons/fa";
 import { FaGlobe } from "react-icons/fa";
@@ -17,6 +19,7 @@ interface Props {
   description: string;
   webLink: string;
   gitLink: string;
+  techStack: React.ReactNode;
 }
 
 const ProjectCard: React.FC<Props> = ({
@@ -25,6 +28,7 @@ const ProjectCard: React.FC<Props> = ({
   description,
   webLink,
   gitLink,
+  techStack
 }): JSX.Element => {
   return (
     <>
@@ -43,11 +47,14 @@ const ProjectCard: React.FC<Props> = ({
             <p className="text-sm md:text-md px-4">{description}</p>
           </CardContent>
           <CardFooter className="flex justify-end gap-2">
+            <ProjectTechList
+              techStack={techStack}
+            />
             <a href={webLink} target="_blank">
-            <TechBadge icon={<FaGithub />} name="Web" />
+              <TechBadge icon={<FaGlobe />} name="Web" />
             </a>
             <a href={gitLink} target="_blank">
-              <TechBadge icon={<FaGlobe />} name="Git"/>
+              <TechBadge icon={<FaGithub />} name="Git" />
             </a>
           </CardFooter>
         </div>

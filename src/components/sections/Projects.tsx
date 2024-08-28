@@ -3,6 +3,18 @@ import ProjectCard from "../global/ProjectCard";
 import Jane from "../../assets/jane.jpg";
 import InvestIQ from "../../assets/InvestIQ.jpg";
 import Solar from "../../assets/Solar.jpg";
+import TechBadge from "../global/TechBadge";
+
+import { FaReact } from "react-icons/fa";
+import { SiTypescript } from "react-icons/si";
+import { IoLogoJavascript } from "react-icons/io";
+import { SiCsharp } from "react-icons/si";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiDaisyui } from "react-icons/si";
+import { SiShadcnui } from "react-icons/si";
+import { AiOutlineDotNet } from "react-icons/ai";
+import { FaPython } from "react-icons/fa";
+import { SiMui } from "react-icons/si";
 
 const Projects = () => {
   return (
@@ -19,6 +31,14 @@ const Projects = () => {
             gitLink="https://github.com/CookieCoder103/janes-photography"
             title="Janes Photography"
             description="A personal Portfolio for a wedding photographer."
+            techStack={
+              <>
+                <TechBadge icon={<FaReact />} name="React" />
+                <TechBadge icon={<SiTypescript />} name="TypeScript" />
+                <TechBadge icon={<RiTailwindCssFill />} name="TailWindCSS" />
+                <TechBadge icon={<SiShadcnui />} name="ShadcnUI" />
+              </>
+            }
           />
 
           <ProjectCard
@@ -27,6 +47,14 @@ const Projects = () => {
             gitLink="https://github.com/CookieCoder103/InvestIQ"
             title="InvestIQ"
             description="A Website where you can track the top F500 and NASDAQ companies stock prices."
+            techStack={
+              <>
+                <TechBadge icon={<FaReact />} name="React" />
+                <TechBadge icon={<SiTypescript />} name="TypeScript" />
+                <TechBadge icon={<RiTailwindCssFill />} name="TailWindCSS" />
+                <TechBadge icon={<SiDaisyui />} name="DaisyUI" />
+              </>
+            }
           />
 
           <ProjectCard
@@ -35,6 +63,13 @@ const Projects = () => {
             gitLink="https://github.com/CookieCoder103/Refreshed-Solar"
             title="Refreshed Solar"
             description="A website for a company that refurbishes and re-sells solar panels at an affordable rate for bussinesses and homeowners."
+            techStack={
+              <>
+                <TechBadge icon={<FaReact />} name="React" />
+                <TechBadge icon={<IoLogoJavascript />} name="JavaScript" />
+                <TechBadge icon={<SiMui />} name="MaterialUI" />
+              </>
+            }
           />
         </div>
       </CardComp>

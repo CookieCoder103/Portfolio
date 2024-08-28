@@ -7,6 +7,7 @@ import Nav from "./components/sections/Nav";
 import Footer from "./components/sections/Footer";
 import Projects from "./components/sections/Projects";
 import More from "./components/sections/More";
+import Resume from "./components/sections/Resume";
 
 function App() {
   const [isSmallScreen, setIsSmallScreen] = useState(false);
@@ -44,7 +45,9 @@ function App() {
                 <section id="more-on-me">
                   <More />
                 </section>
-                <section id="resume"></section>
+                <section id="resume">
+                  <Resume />
+                </section>
               </div>
             </div>
           </div>
@@ -68,7 +71,9 @@ function App() {
                 <section id="more-on-me">
                   <More />
                 </section>
-                <section id="resume"></section>
+                <section id="resume">
+                  <Resume />
+                </section>
               </div>
             </div>
           </div>
