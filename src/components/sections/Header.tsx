@@ -17,7 +17,7 @@ const Header = () => {
                 <LinkedIn />
               </a>
 
-              <a href="https://github.com/CookieCoder103" target="_blank">
+              <a href="https://github.com/SohrabYavari" target="_blank">
                 <GitHub />
               </a>
               <div className="pl-5">
