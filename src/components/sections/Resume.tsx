@@ -4,7 +4,7 @@ import CardComp from "../global/CardComp";
 const Resume = () => {
   return (
     <>
-      <div>
+      <div className="mb-20">
         <CardComp
           title="My Experience"
           header="Resume"
